@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>お問い合わせ</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #f7f7f7;
+      }
+      .form-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: auto;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-box">
+      <h1>お問い合わせフォーム</h1>
+      <p>ご用件をご記入ください。</p>
+
+      <form action="https://formspree.io/f/xoqgbyjv" method="POST">
+        <label>お名前</label>
+        <input type="text" name="name" required>
+
+        <label>メールアドレス</label>
+        <input type="email" name="email" required>
+
+        <label>内容</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">送信する</button>
+      </form>
+
+      <a href="index.html">← トップページへ戻る</a>
+    </div>
+  </body>
+</html>
